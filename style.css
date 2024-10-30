@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+  --bg-color: #6F4E37;
+  --primary-color: #ECB176;
+  --secundary-color: #FED8B1;
+  --font: Nunito Sans;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: var(--font);
+    height: 100vh;
+    margin: 0;
+  }
+
+  header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: var(--bg-color);
+    font-weight: 700;
+  }
+
+  
