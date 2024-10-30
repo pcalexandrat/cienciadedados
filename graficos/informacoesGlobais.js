@@ -6,10 +6,10 @@ async function vizualizarInformacoesGlobais() {
     console.log(dados)
     const paragrafo = document.createElement('p')
     paragrafo.classList.add('graficos-container__texto')
-    paragrafo.innerHTML = `Você sabia que  do total de ${dados.total_pessoas_mundo} de pessoas no mundo,  
-             ${total_trabalhadores_mundo} são trabalhadores e aproximadamente ${dados.total_pessoas_que_necessitam_transporte_para_trabalho} necessitam de transporte
+    paragrafo.innerHTML = `Você sabia que  do total de <span> ${dados.total_pessoas_mundo} </span> de pessoas no mundo,  
+            <span> ${total_trabalhadores_mundo} </span> são trabalhadores e aproximadamente <span> ${dados.total_pessoas_que_necessitam_transporte_para_trabalho} </span> necessitam de transporte
             para ir ao trabalho?  E o tempo médio gasto para o deslocamento ao trabalho
-            é de menos de ${dados.tempo_medio_deslocamento_para_trabalho}`
+            é de menos de <span> ${dados.tempo_medio_deslocamento_para_trabalho}</span>`
     const container = document.getElementById('graficos-container')
     container.appendChild(paragrafo);
 
