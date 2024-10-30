@@ -50,7 +50,8 @@ body {
     font-size: 1.3rem;
     text-align: center;
     padding: 2rem;
-    border: var(--primary-color) solid 2px;
+    border: var(--secundary-color) solid 2px;
+    color: black;
   }
 
   #graficos-container {
