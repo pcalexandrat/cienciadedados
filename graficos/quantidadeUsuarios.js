@@ -2,13 +2,13 @@ async function quantidadeUsuarios() {
     const url = 'https://raw.githubusercontent.com/guilhermeomrails/api/main/numero-usuarios.json'
     const res = await fetch(url)
     const dados = await res.json()
-    const nomeDasRedes = Object.keys(dados)
-    const quantidadeUsuarios = Object.values(dados)
+    const total_pessoas_mundo = Object.keys(dados)
+    const total_pessoas_que_necessitam_transporte_para_trabalho = Object.values(dados)
   
   const data = [
     {
-      x: nomeDasRedes,
-      y: quantidadeUsuarios,
+      x: total_pessoas_mundo,
+      y: total_pessoas_que_necessitam_transporte_para_trabalho,
       type: 'bar'
     }
   ]
