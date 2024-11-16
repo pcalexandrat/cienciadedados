@@ -19,7 +19,7 @@ async function vizualizarInformacoesGlobais() {
     paragrafo.innerHTML = `Você sabia que  do total de <span> ${pessoas_mundo} </span>  bilhões de pessoas no mundo,  
             <span> ${trabalhadores_mundo} </span> são trabalhadores e aproximadamente <span> ${transporte_para_trabalho} </span> necessitam de transporte
             para ir ao trabalho? <br> E o tempo médio gasto para o deslocamento ao trabalho
-            é de menos de <span> ${horas}horas </span> e <span> ${minutos} minutos </span>. Esses trabalhadores que necessitam do transporte representam <span> ${percentual}</span> do total das pessoas do mundo`
+            é de menos de <span> ${horas}horas </span> e <span> ${minutos} minutos </span>. Esses trabalhadores que necessitam do transporte representam <span> ${percentual}</span> % do total das pessoas do mundo`
     const container = document.getElementById('graficos-container')
     container.appendChild(paragrafo);
 
