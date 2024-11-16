@@ -10,7 +10,7 @@ async function vizualizarInformacoesGlobais() {
     const trabalhadores_mundo = (dados.total_trabalhadores_mundo / 1e9)
     const transporte_para_trabalho = (dados.total_pessoas_que_necessitam_transporte_para_trabalho / 1e9)
     const horas = parseInt(dados.tempo_medio_deslocamento_para_trabalho)
-    const minutos = Match.round ((dados.tempo_medio_deslocamento_para_trabalho - horas) * 60)
+    const minutos = Math.round ((dados.tempo_medio_deslocamento_para_trabalho - horas) * 60)
     const percentual = ((transporte_para_trabalho/pessoas_mundo)*100).toFixed(2)
 
 
