@@ -2,13 +2,13 @@ async function quantidadeUsuarios() {
     const url = 'https://raw.githubusercontent.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/refs/heads/Aula01/transporte/transporte-numero-tipos-locomocao.json'
     const res = await fetch(url)
     const dados = await res.json()
-    const pessoas_mundo = Object.keys(dados)
-    const trabalhadores_mundo = Object.values(dados)
+    const transporte = Object.keys(dados)
+    const quantidade = Object.values(dados)
   
   const data = [
     {
-      x: pessoas_mundo,
-      y: trabalhadores_mundo,
+      x: transporte,
+      y: quantidade,
       type: 'bar'
     }
   ]
